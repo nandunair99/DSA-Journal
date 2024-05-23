@@ -4,6 +4,7 @@ class Node:
       self.rightChild = None
       self.data = key
 
+#if binary tree traversed in order we get a sorted keys in ascending order
 # Create a function to perform inorder tree traversal
 def InorderTraversal(root):
    if root:
@@ -27,12 +28,13 @@ def PostorderTraversal(root):
 
 # Main class
 if __name__ == "__main__":
-   root = Node(3)
-   root.leftChild = Node(26)
-   root.rightChild = Node(42)
-   root.leftChild.leftChild = Node(54)
-   root.leftChild.rightChild = Node(65)
-   root.rightChild.leftChild = Node(12)
+   root = Node(4)
+   root.leftChild = Node(2)
+   root.rightChild = Node(6)
+   root.leftChild.leftChild = Node(1)
+   root.leftChild.rightChild = Node(3)
+   root.rightChild.leftChild = Node(5)
+   root.rightChild.rightChild = Node(7)
 
    # Function call
    print("Inorder traversal of binary tree is")
